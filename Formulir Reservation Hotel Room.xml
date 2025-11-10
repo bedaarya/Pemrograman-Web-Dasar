@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="EN" lang="EN">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title>Reservation Hotel Room</title>
+  <link rel="stylesheet" type="text/css" href="style/style.css" />
+</head>
+<body>
+  <h1>Reservation Hotel Room</h1>
+
+  <form action="" method="post">
+    <!-- Personal Data -->
+    <div class="box">
+      <strong>Personal Data</strong>
+      <p>1. Name<br />
+        <input type="text" name="name" size="30" />
+      </p>
+      <p>2. Gender<br />
+        <input type="radio" name="gender" value="Male" />Male 
+        <input type="radio" name="gender" value="Female" />Female
+      </p>
+      <p>3. Email Address<br />
+        <input type="text" name="email" size="30" />
+      </p>
+      <p>4. Telp Number<br />
+        <input type="text" name="telp" size="30" />
+      </p>
+    </div>
+
+    <!-- Reservation Room Form -->
+    <div class="box">
+      <strong>Reservation Room Form</strong>
+      <p>1. Reservator Name<br />
+        <input type="text" name="reservator" size="30" />
+      </p>
+      <p>2. Booking Date<br />
+        <input type="text" name="bookingdate" size="30" />
+      </p>
+      <p>3. Room Type<br />
+        <select name="roomtype">
+          <option>Deluxe</option>
+          <option>Superior</option>
+          <option>Suite</option>
+        </select>
+      </p>
+      <p>4. Bed Type<br />
+        <select name="bedtype">
+          <option>Single bed</option>
+          <option>Double bed</option>
+          <option>King bed</option>
+        </select>
+      </p>
+      <p>5. Breakfast<br />
+        <input type="radio" name="breakfast" value="With Breakfast" />With Breakfast
+        <input type="radio" name="breakfast" value="Without Breakfast" />Without Breakfast
+      </p>
+    </div>
+
+    <!-- Payment -->
+    <div class="box">
+      <strong>Payment</strong>
+      <p>1. Check In Date<br />
+        <input type="text" name="checkin" size="30" />
+      </p>
+      <p>2. Check Out Date<br />
+        <input type="text" name="checkout" size="30" />
+      </p>
+      <p>3. Payment Method<br />
+        <select name="payment">
+          <option>Cash</option>
+          <option>Credit Card</option>
+          <option>Transfer</option>
+        </select>
+      </p>
+    </div>
+
+    <input type="submit" value="Submit" />
+  </form>
+</body>
+</html>
